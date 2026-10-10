@@ -13,7 +13,7 @@ export const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <h1>Shopperly</h1>
+            <h1>lunchpaad</h1>
           </div>
 
           {/* Desktop Navigation */}

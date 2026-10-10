@@ -5,15 +5,30 @@ export const Footer = () => {
   const footerLinks = [
     {
       title: 'Product',
-      links: ['Features', 'How it works', 'Templates', 'Pricing']
+      links: [
+        { text: 'Features', href: '#features' },
+        { text: 'How it works', href: '#how-it-works' },
+        { text: 'Templates', href: '#' },
+        { text: 'Pricing', href: '#pricing' }
+      ]
     },
     {
       title: 'Company',
-      links: ['About', 'Blog', 'Careers', 'Contact']
+      links: [
+        { text: 'About', href: '/about' },
+        { text: 'Blog', href: '#' },
+        { text: 'Careers', href: '#' },
+        { text: 'Contact', href: '/contact' }
+      ]
     },
     {
       title: 'Resources',
-      links: ['Documentation', 'Help Center', 'Community', 'API']
+      links: [
+        { text: 'Documentation', href: '#' },
+        { text: 'Help Center', href: '#' },
+        { text: 'Community', href: '#' },
+        { text: 'API', href: '#' }
+      ]
     }
   ]
 
@@ -22,7 +37,7 @@ export const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-brand">
-            <h3>Shopperly</h3>
+            <h3>lunchpaad</h3>
             <p>Build stunning websites with AI-powered technology</p>
             <div className="social-links">
               <a href="#" aria-label="Facebook">
@@ -43,7 +58,7 @@ export const Footer = () => {
               <ul>
                 {column.links.map((link, idx) => (
                   <li key={idx}>
-                    <a href="#">{link}</a>
+                    <a href={link.href}>{link.text}</a>
                   </li>
                 ))}
               </ul>
@@ -52,10 +67,11 @@ export const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2026 Shopperly. All rights reserved.</p>
+          <p>&copy; 2026 lunchpaad. All rights reserved.</p>
           <div className="footer-legal">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-use">Terms of Use</a>
+            <a href="/terms-and-conditions">Terms & Conditions</a>
           </div>
         </div>
       </div>
