@@ -16,11 +16,11 @@ export const Hero = () => {
   ]
 
   const placeholders = [
-    'Create a modern portfolio website with a hero section, project gallery, and contact form...',
-    'Build an e-commerce store with product listings, shopping cart, and checkout...',
-    'Design a SaaS landing page with pricing tables, testimonials, and signup form...',
-    'Make a restaurant website with menu, reservations, and location map...',
-    'Create a blog platform with article listings, categories, and comment system...'
+    'Create a modern portfolio with hero section and gallery...',
+    'Build an e-commerce store with products and checkout...',
+    'Design a SaaS landing page with pricing and testimonials...',
+    'Make a restaurant site with menu and reservations...',
+    'Create a blog with articles and comment system...'
   ]
 
   const rotatingWords = [
