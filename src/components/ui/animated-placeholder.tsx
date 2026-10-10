@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 
 interface AnimatedPlaceholderProps {
   placeholders: string[];
-  duration?: number;
   typingSpeed?: number;
   pauseDuration?: number;
   className?: string;
@@ -12,7 +11,6 @@ interface AnimatedPlaceholderProps {
 
 export function AnimatedPlaceholder({
   placeholders,
-  duration = 3000,
   typingSpeed = 50,
   pauseDuration = 1000,
   className,
