@@ -2,7 +2,7 @@ import './Stats.css'
 
 export const Stats = () => {
   const stats = [
-    { number: '10K+', label: 'Websites Created' },
+    { number: '2K+', label: 'Websites Created' },
     { number: '50+', label: 'Happy Users' },
     { number: '99.9%', label: 'Uptime' },
     { number: '24/7', label: 'AI Support' }
