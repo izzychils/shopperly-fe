@@ -39,7 +39,8 @@ export function WordRotate({
       verticalAlign: 'baseline',
       lineHeight: 'inherit',
       minWidth: '150px',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      margin: '0 0.3rem'
     }}>
       <AnimatePresence mode="wait">
         <motion.span
