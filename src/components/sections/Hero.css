@@ -49,32 +49,26 @@
 .hero h1 {
   margin-bottom: 1.5rem;
   animation: fadeIn 0.8s ease 0.2s both;
-  white-space: nowrap;
-  overflow: visible;
   line-height: 1.2;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 0.5rem;
   width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 767px) {
   .hero h1 {
     white-space: normal;
     word-wrap: break-word;
-    flex-wrap: wrap;
   }
 }
 
 .hero h1 > * {
-  display: inline-block;
+  display: inline;
   vertical-align: baseline;
   line-height: inherit;
 }
 
 .hero h1 .gradient-text {
-  display: inline-block;
+  display: inline;
   vertical-align: baseline;
   line-height: inherit;
 }

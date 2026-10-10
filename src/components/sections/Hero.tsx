@@ -41,7 +41,10 @@ export const Hero = () => {
           </div>
 
           <h1>
-            Build <WordRotate words={rotatingWords} /> websites with <span className="gradient-text">AI</span>
+            <span>Build </span>
+            <WordRotate words={rotatingWords} />
+            <span> websites with </span>
+            <span className="gradient-text">AI</span>
           </h1>
 
           <p className="hero-subtitle">
