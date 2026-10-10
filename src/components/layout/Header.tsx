@@ -1,10 +1,14 @@
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '../ui/dropdown-menu'
 import './Header.css'
 
 export const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
   return (
     <header className="header">
       <div className="container">
@@ -26,34 +30,44 @@ export const Header = () => {
             <button className="btn-primary">Get Started</button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button 
-            className="mobile-menu-btn"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+          {/* Mobile Menu Dropdown */}
+          <div className="mobile-menu-dropdown">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="mobile-menu-btn-glass" aria-label="Toggle menu">
+                  <Menu size={24} />
+                  <ChevronDown size={16} />
+                </button>
+              </DropdownMenuTrigger>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="nav-mobile">
-            <a href="#features" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-              Features
-            </a>
-            <a href="#how-it-works" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-              How it works
-            </a>
-            <a href="#pricing" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-              Pricing
-            </a>
-            <div className="header-cta-mobile">
-              <button className="btn-secondary">Sign in</button>
-              <button className="btn-primary">Get Started</button>
-            </div>
+              <DropdownMenuContent 
+                className="mobile-menu-dropdown-content"
+                align="end"
+                sideOffset={8}
+              >
+                <DropdownMenuItem asChild>
+                  <a href="#features" className="dropdown-nav-link">
+                    Features
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <a href="#how-it-works" className="dropdown-nav-link">
+                    How it works
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <a href="#pricing" className="dropdown-nav-link">
+                    Pricing
+                  </a>
+                </DropdownMenuItem>
+                <div className="dropdown-cta-buttons">
+                  <button className="btn-secondary-dropdown">Sign in</button>
+                  <button className="btn-primary-dropdown">Get Started</button>
+                </div>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
-        )}
+        </div>
       </div>
     </header>
   )
