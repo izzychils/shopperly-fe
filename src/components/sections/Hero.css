@@ -86,17 +86,36 @@
   }
 }
 
-.hero-input {
+.hero-input-placeholder-wrapper {
   flex: 1;
+  position: relative;
+}
+
+.hero-input {
+  width: 100%;
   border: none;
   outline: none;
   font-size: 1rem;
   color: var(--text-primary);
   padding: 0.5rem;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-input-placeholder {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  right: 0;
+  pointer-events: none;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  z-index: 1;
 }
 
 .hero-input::placeholder {
-  color: var(--text-secondary);
+  color: transparent;
 }
 
 .hero-input-actions {
