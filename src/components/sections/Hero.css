@@ -58,7 +58,14 @@
 @media (max-width: 767px) {
   .hero h1 {
     white-space: normal;
-    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero h1 .h1-line-one,
+  .hero h1 .h1-line-two {
+    white-space: nowrap;
   }
 }
 
