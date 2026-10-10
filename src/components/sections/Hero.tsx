@@ -24,12 +24,11 @@ export const Hero = () => {
   ]
 
   const rotatingWords = [
-    'portfolio',
-    'e-commerce',
-    'landing page',
-    'blog',
-    'dashboard',
-    'webapp'
+    'amazing',
+    'stunning',
+    'beautiful',
+    'modern',
+    'powerful'
   ]
 
   return (
@@ -41,14 +40,8 @@ export const Hero = () => {
             <span>AI Powered Website Builder</span>
           </div>
 
-          <h1 style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', justifyContent: 'center' }}>
-            <span>Build</span>
-            <WordRotate 
-              words={rotatingWords}
-              className="gradient-text"
-              duration={2500}
-            />
-            <span>with <span className="gradient-text">AI</span></span>
+          <h1>
+            Build <WordRotate words={rotatingWords} /> websites with <span className="gradient-text">AI</span>
           </h1>
 
           <p className="hero-subtitle">

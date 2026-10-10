@@ -15,12 +15,12 @@ export function WordRotate({
   words,
   duration = 2500,
   framerProps = {
-    initial: { opacity: 0, y: 20, scale: 0.8 },
-    animate: { opacity: 1, y: 0, scale: 1 },
-    exit: { opacity: 0, y: -20, scale: 0.8 },
-    transition: { duration: 0.4, ease: "easeInOut" },
+    initial: { opacity: 0, width: 0 },
+    animate: { opacity: 1, width: "auto" },
+    exit: { opacity: 0, width: 0 },
+    transition: { duration: 0.3, ease: "easeInOut" },
   },
-  className,
+  className = "gradient-text",
 }: WordRotateProps) {
   const [index, setIndex] = useState(0);
 
@@ -29,17 +29,13 @@ export function WordRotate({
       setIndex((prevIndex) => (prevIndex + 1) % words.length);
     }, duration);
 
-    // Clean up interval on unmount
     return () => clearInterval(interval);
   }, [words, duration]);
 
   return (
     <span style={{ 
-      display: 'inline-block', 
-      minWidth: '200px',
-      textAlign: 'center',
-      position: 'relative',
-      height: '1.2em',
+      display: 'inline-block',
+      overflow: 'hidden',
       verticalAlign: 'baseline'
     }}>
       <AnimatePresence mode="wait">
@@ -48,9 +44,6 @@ export function WordRotate({
           className={cn(className)}
           style={{
             display: 'inline-block',
-            position: 'absolute',
-            left: '50%',
-            transform: 'translateX(-50%)',
             whiteSpace: 'nowrap'
           }}
           {...framerProps}
