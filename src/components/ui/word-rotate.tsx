@@ -34,10 +34,12 @@ export function WordRotate({
 
   return (
     <span style={{ 
-      display: 'inline-block',
-      overflow: 'hidden',
+      display: 'inline-flex',
+      overflow: 'visible',
       verticalAlign: 'baseline',
-      lineHeight: 'inherit'
+      lineHeight: 'inherit',
+      minWidth: '150px',
+      justifyContent: 'center'
     }}>
       <AnimatePresence mode="wait">
         <motion.span
