@@ -36,7 +36,8 @@ export function WordRotate({
     <span style={{ 
       display: 'inline-block',
       overflow: 'hidden',
-      verticalAlign: 'baseline'
+      verticalAlign: 'baseline',
+      lineHeight: 'inherit'
     }}>
       <AnimatePresence mode="wait">
         <motion.span
@@ -44,7 +45,9 @@ export function WordRotate({
           className={cn(className)}
           style={{
             display: 'inline-block',
-            whiteSpace: 'nowrap'
+            whiteSpace: 'nowrap',
+            verticalAlign: 'baseline',
+            lineHeight: 'inherit'
           }}
           {...framerProps}
         >
