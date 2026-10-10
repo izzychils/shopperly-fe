@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { Menu, X, ChevronDown } from 'lucide-react'
+import { Menu, ChevronDown } from 'lucide-react'
 import {
   DropdownMenu,
   DropdownMenuContent,
