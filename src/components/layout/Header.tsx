@@ -10,7 +10,7 @@ export const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <h1>NaasAI</h1>
+            <h1>Shopperly</h1>
           </div>
 
           {/* Desktop Navigation */}

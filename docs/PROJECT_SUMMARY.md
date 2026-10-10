@@ -1,4 +1,4 @@
-# NaasAI Website Builder - Project Summary 🎉
+# Shopperly Website Builder - Project Summary 🎉
 
 ## ✅ Project Complete!
 

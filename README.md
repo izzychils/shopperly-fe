@@ -1,6 +1,6 @@
 # shopperly-fe
 
-NaasAI - AI-Powered Website Builder
+Shopperly - AI-Powered Website Builder
 
 A modern, responsive landing page for an AI-powered website builder platform built with React, TypeScript, and Vite.
 

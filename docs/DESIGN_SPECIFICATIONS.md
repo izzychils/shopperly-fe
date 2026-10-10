@@ -2,7 +2,7 @@
 
 ## Visual Design Overview
 
-This project replicates the NaasAI website design from the provided inspiration images with pixel-perfect accuracy and responsive mobile support.
+This project replicates the Shopperly website design from the provided inspiration images with pixel-perfect accuracy and responsive mobile support.
 
 ## Color System
 
@@ -277,7 +277,7 @@ Base: 0px - 767px
 - Size: Scalable, typically 20-28px
 
 ### Logo
-- Text-based: "NaasAI"
+- Text-based: "Shopperly"
 - Font weight: 700
 - Size: 1.5rem
 

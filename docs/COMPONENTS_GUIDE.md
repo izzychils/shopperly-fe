@@ -1,6 +1,6 @@
 # Components Guide
 
-Complete reference for all components in the NaasAI project.
+Complete reference for all components in the Shopperly project.
 
 ## 📁 Component Structure
 

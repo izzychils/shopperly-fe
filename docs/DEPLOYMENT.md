@@ -153,8 +153,8 @@ CMD ["nginx", "-g", "daemon off;"]
 
 2. Build and run:
 ```bash
-docker build -t naasai-website .
-docker run -p 80:80 naasai-website
+docker build -t shopperly-website .
+docker run -p 80:80 shopperly-website
 ```
 
 ### Option 6: Traditional Web Hosting
@@ -175,7 +175,7 @@ If you need environment variables:
 1. Create `.env` file:
 ```env
 VITE_API_URL=https://api.example.com
-VITE_APP_NAME=NaasAI
+VITE_APP_NAME=Shopperly
 ```
 
 2. Access in code:

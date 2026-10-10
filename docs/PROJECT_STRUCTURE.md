@@ -1,4 +1,4 @@
-# NaasAI Website - Complete Project Structure
+# Shopperly Website - Complete Project Structure
 
 ## 📁 Folder Organization
 

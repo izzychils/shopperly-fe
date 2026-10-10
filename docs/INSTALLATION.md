@@ -1,6 +1,6 @@
 # Installation Instructions
 
-Complete guide to install and run the NaasAI website project.
+Complete guide to install and run the Shopperly website project.
 
 ## Prerequisites
 
@@ -98,8 +98,8 @@ If you want to create the project from scratch:
 #### Step 1: Create Project Directory
 
 ```bash
-mkdir naasai-website
-cd naasai-website
+mkdir shopperly-website
+cd shopperly-website
 ```
 
 #### Step 2: Initialize Vite Project
@@ -109,7 +109,7 @@ npm create vite@latest . -- --template react-ts
 ```
 
 Follow the prompts:
-- Package name: `naasai-website`
+- Package name: `shopperly-website`
 - Select framework: `React`
 - Select variant: `TypeScript`
 
@@ -241,7 +241,7 @@ npm list --depth=0
 
 Should show:
 ```
-naasai-website@0.0.0
+shopperly-website@0.0.0
 ├── lucide-react@0.292.0
 ├── react@18.2.0
 ├── react-dom@18.2.0
@@ -253,7 +253,7 @@ naasai-website@0.0.0
 Visit: http://localhost:5173
 
 You should see:
-- ✅ NaasAI logo in header
+- ✅ Shopperly logo in header
 - ✅ "Build websites with AI" headline
 - ✅ All sections visible
 - ✅ No console errors
@@ -308,7 +308,7 @@ If you need environment variables:
 
 ```bash
 # .env
-VITE_APP_NAME=NaasAI
+VITE_APP_NAME=Shopperly
 VITE_API_URL=https://api.example.com
 ```
 
@@ -447,7 +447,7 @@ After successful installation:
 
 **Installation Complete! 🎉**
 
-You're now ready to develop and customize your NaasAI website.
+You're now ready to develop and customize your Shopperly website.
 
 For questions or issues, refer to the documentation files or check the troubleshooting section above.
 

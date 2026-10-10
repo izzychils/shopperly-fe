@@ -1,6 +1,6 @@
 # Quick Start Guide 🚀
 
-Get your NaasAI website running in 3 simple steps!
+Get your Shopperly website running in 3 simple steps!
 
 ## Step 1: Install Dependencies
 

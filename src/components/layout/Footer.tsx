@@ -22,7 +22,7 @@ export const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-brand">
-            <h3>NaasAI</h3>
+            <h3>Shopperly</h3>
             <p>Build stunning websites with AI-powered technology</p>
             <div className="social-links">
               <a href="#" aria-label="Facebook">
@@ -52,7 +52,7 @@ export const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2026 NaasAI. All rights reserved.</p>
+          <p>&copy; 2026 Shopperly. All rights reserved.</p>
           <div className="footer-legal">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
