@@ -41,14 +41,14 @@ export const Hero = () => {
             <span>AI Powered Website Builder</span>
           </div>
 
-          <h1>
-            Build{' '}
+          <h1 style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', justifyContent: 'center' }}>
+            <span>Build</span>
             <WordRotate 
               words={rotatingWords}
-              className="gradient-text inline-block"
-              duration={2000}
+              className="gradient-text"
+              duration={2500}
             />
-            {' '}websites with <span className="gradient-text">AI</span>
+            <span>with <span className="gradient-text">AI</span></span>
           </h1>
 
           <p className="hero-subtitle">

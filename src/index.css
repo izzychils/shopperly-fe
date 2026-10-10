@@ -128,10 +128,20 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-weight: 700;
 }
 
 .inline-block {
   display: inline-block;
+}
+
+/* Word rotation container */
+.word-rotate-container {
+  display: inline-block;
+  min-width: 200px;
+  text-align: center;
+  position: relative;
+  overflow: visible;
 }
 
 /* Pulse animation for cursor */

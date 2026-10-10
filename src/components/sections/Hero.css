@@ -49,6 +49,18 @@
 .hero h1 {
   margin-bottom: 1.5rem;
   animation: fadeIn 0.8s ease 0.2s both;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    flex-wrap: nowrap;
+  }
 }
 
 .hero h1 .gradient-text {

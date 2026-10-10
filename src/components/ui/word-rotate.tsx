@@ -15,10 +15,10 @@ export function WordRotate({
   words,
   duration = 2500,
   framerProps = {
-    initial: { opacity: 0, y: -50 },
-    animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: 50 },
-    transition: { duration: 0.25, ease: "easeOut" },
+    initial: { opacity: 0, y: 20, scale: 0.8 },
+    animate: { opacity: 1, y: 0, scale: 1 },
+    exit: { opacity: 0, y: -20, scale: 0.8 },
+    transition: { duration: 0.4, ease: "easeInOut" },
   },
   className,
 }: WordRotateProps) {
@@ -34,16 +34,30 @@ export function WordRotate({
   }, [words, duration]);
 
   return (
-    <div className="overflow-hidden py-2">
+    <span style={{ 
+      display: 'inline-block', 
+      minWidth: '200px',
+      textAlign: 'center',
+      position: 'relative',
+      height: '1.2em',
+      verticalAlign: 'baseline'
+    }}>
       <AnimatePresence mode="wait">
         <motion.span
           key={words[index]}
           className={cn(className)}
+          style={{
+            display: 'inline-block',
+            position: 'absolute',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            whiteSpace: 'nowrap'
+          }}
           {...framerProps}
         >
           {words[index]}
         </motion.span>
       </AnimatePresence>
-    </div>
+    </span>
   );
 }
