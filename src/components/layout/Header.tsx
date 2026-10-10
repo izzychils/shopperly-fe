@@ -1,4 +1,5 @@
 import { Menu } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,7 +14,9 @@ export const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <h1>lunchpaad</h1>
+            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <h1>lunchpaad</h1>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}

@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Instagram } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 export const Footer = () => {
@@ -6,10 +7,10 @@ export const Footer = () => {
     {
       title: 'Product',
       links: [
-        { text: 'Features', href: '#features' },
-        { text: 'How it works', href: '#how-it-works' },
+        { text: 'Features', href: '/#features' },
+        { text: 'How it works', href: '/#how-it-works' },
         { text: 'Templates', href: '#' },
-        { text: 'Pricing', href: '#pricing' }
+        { text: 'Pricing', href: '/#pricing' }
       ]
     },
     {
@@ -58,7 +59,11 @@ export const Footer = () => {
               <ul>
                 {column.links.map((link, idx) => (
                   <li key={idx}>
-                    <a href={link.href}>{link.text}</a>
+                    {link.href.startsWith('/') && link.href !== '/' ? (
+                      <Link to={link.href}>{link.text}</Link>
+                    ) : (
+                      <a href={link.href}>{link.text}</a>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -69,9 +74,9 @@ export const Footer = () => {
         <div className="footer-bottom">
           <p>&copy; 2026 lunchpaad. All rights reserved.</p>
           <div className="footer-legal">
-            <a href="/privacy-policy">Privacy Policy</a>
-            <a href="/terms-of-use">Terms of Use</a>
-            <a href="/terms-and-conditions">Terms & Conditions</a>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/terms-of-use">Terms of Use</Link>
+            <Link to="/terms-and-conditions">Terms & Conditions</Link>
           </div>
         </div>
       </div>
