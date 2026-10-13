@@ -8,6 +8,7 @@ import { Pricing } from './components/sections/Pricing'
 import { WebsiteTypes } from './components/sections/WebsiteTypes'
 import { CTA } from './components/sections/CTA'
 import { Footer } from './components/layout/Footer'
+import { ScrollToTop } from './components/layout/ScrollToTop'
 import { 
   AboutUs, 
   PrivacyPolicy, 
@@ -33,6 +34,7 @@ function HomePage() {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="app">
         <Header />
         <Routes>

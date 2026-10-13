@@ -14,16 +14,17 @@ export const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link to="/" className="logo-link">
+              <img src="/logo.jpg" alt="lunchpaad logo" className="header-logo-img" />
               <h1>lunchpaad</h1>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="nav-desktop">
-            <a href="#features" className="nav-link">Features</a>
-            <a href="#how-it-works" className="nav-link">How it works</a>
-            <a href="#pricing" className="nav-link">Pricing</a>
+            <a href="/#features" className="nav-link">Features</a>
+            <a href="/#how-it-works" className="nav-link">How it works</a>
+            <a href="/#pricing" className="nav-link">Pricing</a>
           </nav>
 
           {/* Desktop CTA */}
@@ -47,17 +48,17 @@ export const Header = () => {
                 sideOffset={8}
               >
                 <DropdownMenuItem asChild>
-                  <a href="#features" className="dropdown-nav-link">
+                  <a href="/#features" className="dropdown-nav-link">
                     Features
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <a href="#how-it-works" className="dropdown-nav-link">
+                  <a href="/#how-it-works" className="dropdown-nav-link">
                     How it works
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <a href="#pricing" className="dropdown-nav-link">
+                  <a href="/#pricing" className="dropdown-nav-link">
                     Pricing
                   </a>
                 </DropdownMenuItem>
