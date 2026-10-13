@@ -7,7 +7,7 @@ export const Contact = () => {
       icon: <MessageCircle />,
       title: 'Product Help and Technical Support',
       email: 'support@lunchpaad.com',
-      phone: '+234 XXX XXX XXXX',
+      phone: '0800 662 5000',
       description: 'Get help with building your site, troubleshooting issues, or technical questions'
     },
     {
@@ -65,7 +65,7 @@ export const Contact = () => {
                   {option.email}
                 </a>
                 {option.phone && (
-                  <a href={`tel:${option.phone}`} className="contact-phone">
+                  <a href={`tel:${option.phone.replace(/\s+/g, '')}`} className="contact-phone">
                     <Phone size={16} />
                     {option.phone}
                   </a>
