@@ -82,9 +82,6 @@ export const Contact = () => {
           <h2>Company Information</h2>
           <div className="company-details">
             <div className="company-detail-item">
-              <strong>Company:</strong> MecurixTech
-            </div>
-            <div className="company-detail-item">
               <strong>Location:</strong> Rivers State, Nigeria
             </div>
             <div className="company-detail-item">

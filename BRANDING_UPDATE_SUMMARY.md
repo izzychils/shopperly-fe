@@ -63,7 +63,7 @@ All references to "Shopperly" have been updated to "lunchpaad" across the codeba
   - Privacy requests: privacy@lunchpaad.com
   - Abuse reports: abuse@lunchpaad.com
   - Legal notices: legal@lunchpaad.com
-  - Company info: MecurixTech, Rivers State, Nigeria
+  - Company info: Rivers State, Nigeria
 
 ---
 
@@ -304,4 +304,4 @@ All requested updates have been implemented. The codebase is now fully branded a
 
 **Last Updated:** December 2024  
 **Project:** lunchpaad AI Website Builder  
-**Company:** MecurixTech, Rivers State, Nigeria
+**Company Location:** Rivers State, Nigeria
