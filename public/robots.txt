@@ -1,0 +1,3 @@
+# robots.txt - www.lunchpaad.com
+User-agent: *
+Allow: /
