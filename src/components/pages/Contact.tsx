@@ -85,10 +85,10 @@ export const Contact = () => {
               <strong>Location:</strong> Rivers State, Nigeria
             </div>
             <div className="company-detail-item">
-              <strong>Registered Address:</strong> [Your registered office address]
+              <strong>Registered Address:</strong> Rivers State, Nigeria
             </div>
             <div className="company-detail-item">
-              <strong>Support Hours:</strong> [Your days and hours, West Africa Time]
+              <strong>Support Hours:</strong> Monday to Saturday, 8:00 am to 7:00 pm WAT
             </div>
             <div className="company-detail-item">
               <strong>Website:</strong> <a href="https://lunchpaad.com">lunchpaad.com</a>
