@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Public pages of www.lunchpaad.com. Account screens are excluded. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.lunchpaad.com/</loc></url>
+  <url><loc>https://www.lunchpaad.com/about</loc></url>
+  <url><loc>https://www.lunchpaad.com/contact</loc></url>
+  <url><loc>https://www.lunchpaad.com/privacy-policy</loc></url>
+  <url><loc>https://www.lunchpaad.com/terms-of-use</loc></url>
+  <url><loc>https://www.lunchpaad.com/terms-and-conditions</loc></url>
+</urlset>
